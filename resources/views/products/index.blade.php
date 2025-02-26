@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div>
-                    <h3 class="text-center my-4">Tutorial Laravel 12 untuk Pemula</h3>
+                    <h3 class="text-center my-4">Laravel Fiko Baru</h3>
                     <h5 class="text-center"><a href="https://santrikoding.com">www.santrikoding.com</a></h5>
                     <hr>
                 </div>
@@ -41,7 +41,7 @@
                                         <td>{{ $product->stock }}</td>
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('products.destroy', $product->id) }}" method="POST">
-                                                <a href="{{ route('products.show', $product->id) }}" class="btn btn-sm btn-dark">SHOW</a>
+                                                <a href="{{ route('products.show', $product->id) }}" class="btn btn-sm btn-warning">SHOW</a>
                                                 <a href="{{ route('products.edit', $product->id) }}" class="btn btn-sm btn-primary">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
